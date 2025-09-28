@@ -211,3 +211,13 @@ footer{
 #esgotadop{
     display: none;
 }
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.5s ease;
+}
+/* Quando aparece na tela */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
