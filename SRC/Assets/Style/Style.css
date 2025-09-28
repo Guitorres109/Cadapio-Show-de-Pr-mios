@@ -4,11 +4,14 @@
 }
 body {
     /* font-family: Arial, Helvetica, sans-serif; */
-    background-color: rgb(255, 255, 238);
+    background:linear-gradient(to bottom,rgb(255, 255, 238),rgb(255, 255, 201), rgb(175, 174, 174));
 }
 header{ 
     margin: 0; 
     padding: 0; 
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #9a2321, #6d0202);
 } 
 .banner { 
     max-width: 100%; 
@@ -19,15 +22,13 @@ header{
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
     animation: fadeIn 1.3s ease-in; 
 }
-
-
 section, main{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#salgados{
+#Bebidas{
     margin-top: 50px;
 }
 .menu{
@@ -48,7 +49,7 @@ section, main{
     border: 4px outset #d9ad56;
 }
 .menu:hover{
-    transform: scale(1.03);
+    transform: scale(1);
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 .menu h2{
@@ -126,13 +127,23 @@ footer{
     background: linear-gradient(to right, #9a2321, #6d0202);
     /* #9a2321 */
     color: white;
-    height: 100px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+}
+.footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: tomato; */
 }
 .rodape p{
     font-size: 20px;
@@ -147,7 +158,22 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-@media (max-width: 768px) {
+#dev{
+    font-size: 12px;
+    text-align: left;
+    margin-top: 12px;
+}
+.dev{
+    display: flex;
+    width: 20%;
+    height: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dev img{
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
 }
 .redes{
     width: 50px;
@@ -179,12 +205,25 @@ footer{
     .menu{
         width: 80%;
     }
+}
+@media (max-width: 960px){
+    .dev{
+        width: 70%;
+    }
     .rodape{
         flex-direction: column;
         gap: 25px;
         height: auto;
         padding: 10px;
         text-align: center;
+    }
+    #dev{
+        margin-top: 0;
+    }
+    .dev img{
+        width: 70px;
+        height: 70px;
+        margin-top: 0;
     }
     .redes{
         width: 100%;
@@ -202,6 +241,7 @@ footer{
         width: 50px;
         height: 50px;
     } 
+
 }
 #esgotado{
     color: red;
