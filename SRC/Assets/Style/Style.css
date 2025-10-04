@@ -4,23 +4,34 @@
 }
 body {
     /* font-family: Arial, Helvetica, sans-serif; */
-    background:radial-gradient(to bottom,rgb(255, 255, 238),rgb(255, 255, 201), rgb(175, 174, 174));
+    background:radial-gradient(rgb(255, 255, 255),rgb(255, 255, 201), rgb(255, 255, 255));
 }
 header{ 
     margin: 0; 
     padding: 0; 
     width: 100%;
-    height: auto;
-    background: linear-gradient(to right, #9a2321, #6d0202);
+    height: 300px;
+    background-image: url(../Img/fundo.png);
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-size: cover; /* Faz a imagem preencher todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom-left-radius:30px;
+    border-bottom-right-radius:30px;
+    border-bottom: solid 6px #d9ad56;
 } 
-.banner { 
+#banner { 
     max-width: 100%; 
-    width: 100%; 
-    height: auto;
-    border-bottom-left-radius: 30px; 
-    border-bottom-right-radius: 30px; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+    width: 90%; 
+    height: auto;  
     animation: fadeIn 1.3s ease-in; 
+}
+#paroquia{
+    width: 80%;
+    height: 70px;
 }
 section, main{
     display: flex;
@@ -84,17 +95,21 @@ section, main{
         margin-top: 13px;
     }
 }
+@media(max-width: 350px){
+    #preco{
+        width: 70%;
+    }
+    #preco1{
+        width: 70%;
+    }
+}
 #preco{
     font-weight: bold;
-     background: -webkit-linear-gradient(  #d9ad56);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #d9ad56;
 }
 #preco1{
     font-weight: bold;
-    background: -webkit-linear-gradient(  #d9ad56);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #d9ad56;
 }
 
 
